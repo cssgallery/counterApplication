@@ -30,6 +30,7 @@ function makeCounter(countertype){
     }
 
    counter.style.transform = initialTranslate;
+   counter.style.-webkit-transform = initialTranslate;
    counter.style.opacity = '0';
 
    timeOut = 80;
@@ -37,10 +38,12 @@ function makeCounter(countertype){
    setTimeout(function () {
         counter.innerHTML = changeCounter;
         setTimeout(function () {
-            counter.style.transform = addTranslate;    
+            counter.style.transform = addTranslate;  
+            counter.style.-webkit-transform = addTranslate;    
             counter.style.opacity = '0'; 
             setTimeout(function () {
                 counter.style.transform = 'translateY(0%)';   
+                counter.style.-webkit-transform = 'translateY(0%)';  
                 counter.style.opacity = '1'; 
             },timeOut)
         },timeOut)
