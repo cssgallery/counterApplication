@@ -18,7 +18,7 @@ html, body{
     font-size: 16px;
 }
 .panel{
-    background: var(--panelBackground);
+    background: url(https://images.unsplash.com/photo-1610733099270-0960608da9fc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1764&q=80);
     width: 100%;
     height: 100%;
     margin: 0px auto 0px auto;
@@ -26,6 +26,7 @@ html, body{
     text-align: center;
     padding: 0;
     flex-wrap: nowrap;
+    background-size: cover;
     flex-direction: column;
 }
 .panel h1{
