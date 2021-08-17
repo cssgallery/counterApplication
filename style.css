@@ -1,0 +1,75 @@
+@font-face {
+    font-family: sofia;
+    src: url(fonts/sofiapro-light.otf);
+}
+:root {
+    --darkBackground:#12181b;
+    --fontColor:#b2becd;
+    --panelBackground: #2a2e35;
+    --buttonColor: #E9C46A;
+    --buttonHover: #F4A261;
+    --lightColor: #fff;
+}
+html, body{
+    font-family:sofia;
+    background-color: var(--darkBackground);
+    color: var(--fontColor);
+    height:100%;
+    font-size: 16px;
+}
+.panel{
+    background: var(--panelBackground);
+    width: 100%;
+    height: 100%;
+    margin: 0px auto 0px auto;
+    display: flex;
+    text-align: center;
+    padding: 0;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.panel h1{
+    font-size: 2rem;
+    margin: 0px;
+    padding: 3rem 5rem;
+    color: var(--lightColor);
+    font-weight: bold;
+}
+.panel-body{
+    display: flex;
+    flex-direction: row;
+    height:100%;
+    align-items: center;
+}
+.panel-body .left, .panel-body .right{
+    flex-grow: 2;
+}
+.panel-body .center{
+    flex-grow: 6;
+    overflow: hidden;
+}
+.btn{
+    border: 0px;
+    padding:1rem;
+    display: flex;
+    margin: 0 auto;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #f3f3f3;
+    color: #fff;
+    min-width: 50%;
+    justify-content: center;
+}
+.btn svg{
+    margin: 0 5px 0px 0px;
+}
+.center{
+    font-size:5rem;
+}
+#counter, #newCounter{
+    display: block;
+    transition: all 0.2s ease;
+}
+.btn:visited{
+    background-color:yellow
+}
