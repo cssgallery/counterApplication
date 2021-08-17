@@ -69,6 +69,8 @@ html, body{
 #counter, #newCounter{
     display: block;
     transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
 }
 .btn:visited{
     background-color:yellow
