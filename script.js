@@ -32,7 +32,7 @@ function makeCounter(countertype){
    counter.style.transform = initialTranslate;
    counter.style.opacity = '0';
 
-   timeOut = 80;
+   timeOut = 200;
 
    setTimeout(function () {
         counter.innerHTML = changeCounter;
